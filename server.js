@@ -1,3 +1,15 @@
+// Terminal
+// Express Initialization
+// 1. ----> npm init
+//  [this lets u manually add settings and creates app]
+
+// 2.npm install express
+// when u install dep...packLock is created
+
+// ----------------------------------------------------------
+
+
+// Server.js
 // This is the MAIN place to find All info about our app and how it behaves
 // ---(CEO-NUCLEUS)
 // This file will contain
@@ -15,6 +27,7 @@ const app =  express()
 
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
+
 
 
 // 3. REST STRUCTURE  ---> Routing System
