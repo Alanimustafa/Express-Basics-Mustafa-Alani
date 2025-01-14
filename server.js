@@ -9,16 +9,21 @@
 // ----------------------------------------------------------
 
 
+
+
 // Server.js
 // This is the MAIN place to find All info about our app and how it behaves
 // ---(CEO-NUCLEUS)
+
 // This file will contain
+
+
 // 1. Imports and Require Statements
     // ---> Us IMPORTING or CALLING our dependancies inside our app
 // -----------------------------------------------------------------------------
-const express  =  require('express')     
+const express  =  require('express');     
 //  asking for express
-const app =  express()
+const app =  express();
 // initializing express
 // -----------------------------------------------------------------------------
 
@@ -70,6 +75,6 @@ const app =  express()
     // b) Control what PORT our application is served on
 
     app.listen("3000",(req,res)=>{
-
+        console.log("Started on port 3000")
     })
 // -----------------------------------------------------------------------------
