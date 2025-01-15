@@ -2,9 +2,9 @@
   "name": "express-basics",
   "version": "1.0.0",
   "description": "Express Basics",
-  "main": "index.js",
+  "main": "yahia.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon yahia.js"
   },
   "author": "Mustafa Alani",
   "license": "ISC",
