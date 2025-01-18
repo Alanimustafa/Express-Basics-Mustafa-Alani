@@ -1,80 +1,48 @@
-// Terminal
-// Express Initialization
-// 1. ----> npm init
-//  [this lets u manually add settings and creates app]
+// -------------------------[Requires/Imports]
+const express = require("express");
+// -->brings it in
+const app = express();
+// --> init it
+const PORT = 3000;
+// -------------------------[Middleware]
+// app.use()
+// app.set()
 
-// 2.npm install express
-// when u install dep...packLock is created
+// -------------------------[Routes]
+// app.put()
+app.get("/", (req, res) => {
+  // ---------->twins
+  res.send("Welcome to the Party");
+});
 
-// ----------------------------------------------------------
+app
+  .route("/express")
+  .get((req, res) => {})
+  .post((req, res) => {})
+  .put((req, res) => {})
+  .delete((req, res) => {});
 
+app
+  .route("/users")
+  .get((req, res) => {})
+  .post((req, res) => {})
+  .put((req, res) => {})
+  .delete((req, res) => {});
 
+app
+  .route("/products")
+  .get((req, res) => {})
+  .post((req, res) => {})
+  .put((req, res) => {})
+  .delete((req, res) => {});
 
+app.get("/perscholas", (req, res) => {
+  // ---------->twins
+  res.send("RTT55");
+});
 
-// Server.js
-// This is the MAIN place to find All info about our app and how it behaves
-// ---(CEO-NUCLEUS)
-
-// This file will contain
-
-
-// 1. Imports and Require Statements
-    // ---> Us IMPORTING or CALLING our dependancies inside our app
-// -----------------------------------------------------------------------------
-const express  =  require('express');     
-//  asking for express
-const app =  express();
-// initializing express
-// -----------------------------------------------------------------------------
-
-// 2.MiddleWARE
-    // --> {Routing}
-
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-
-
-
-// 3. REST STRUCTURE  ---> Routing System
-// -----------------------------------------------------------------------------
-    // a) HTTP methods are used to create a routing system
-        // GET, POST, PUT, DELETE
-                // ---> ??  .get('/someRouteWuthData')
-    app.get('/users',(req,res)=>{})
-    // ------- GET --> Get information
-    app.post('/users',(req,res)=>{})
-    // ------- POST --> Post information
-    app.put('/user/:id',(req,res)=>{})
-    // ------- PUT  --> Edit information
-    app.delete('/user/:id',(req,res)=>{})
-    // ------- Delete  --> Delete information
-    // -------USERROUTE
-
-    app.get('',(req,res)=>{})
-    // ------- GET --> Get information
-    app.post('',(req,res)=>{})
-    // ------- POST --> Post information
-    app.put('',(req,res)=>{})
-    // ------- PUT  --> Edit information
-    app.delete('',(req,res)=>{})
-    // ------- Delete  --> Delete informatio
-
-    app.get('',(req,res)=>{})
-    // ------- GET --> Get information
-    app.post('',(req,res)=>{})
-    // ------- POST --> Post information
-    app.put('',(req,res)=>{})
-    // ------- PUT  --> Edit information
-    app.delete('',(req,res)=>{})
-    // ------- Delete  --> Delete information
-// -----------------------------------------------------------------------------
-
-// 4. Server
-// -----------------------------------------------------------------------------
-    // a)All thing go through the server (reqs,res')
-    // b) Control what PORT our application is served on
-
-    app.listen("3000",(req,res)=>{
-        console.log("Started on port 3000")
-    })
-// -----------------------------------------------------------------------------
+// -------------------------[Server]
+app.listen(PORT, () => {
+  console.log("Server is Listening on PORT3000");
+});
+// ---------PORT-----callbackFn()

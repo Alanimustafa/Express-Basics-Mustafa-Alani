@@ -4,7 +4,7 @@
   "description": "Express Basics",
   "main": "yahia.js",
   "scripts": {
-    "start": "nodemon yahia.js"
+    "start": "nodemon server.js"
   },
   "author": "Mustafa Alani",
   "license": "ISC",
