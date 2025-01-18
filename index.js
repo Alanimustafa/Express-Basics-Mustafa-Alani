@@ -1,3 +1,5 @@
+// Requireing theFileSystem Module
+const fs = require('fs');
 
 // Requring Express
 const express  = require ('express');
@@ -21,6 +23,15 @@ app.get("/", (req, res) => {
 app.get("/contacts" , (req,res) => {
     res.redirect('/user/settings');
     console.log('You have been redirected to the settings')
+})
+
+app.get ('/json', (req, res) => {
+    res.json ({
+        name : 'Mustafa Alni',
+        grades: [90,99,80,99,90],
+        enrolled: true,
+        course: 'NodeJS and Express'
+    });
 })
   
 
